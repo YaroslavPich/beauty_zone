@@ -36,6 +36,21 @@
   --color-secondary-blue-yellow: #ffd02b;
 }
 
+/* BASE */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
 /* Global */
 body {
   color: var(--color-primary-dark);
@@ -43,6 +58,7 @@ body {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   line-height: 1.17;
+  margin: 0;
 }
 
 address {
@@ -52,8 +68,18 @@ address {
 ul {
   list-style-type: none;
 }
+
+.section {
+  padding: 48px 0px;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+}
 /* Button */
 .button-order {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
@@ -63,6 +89,7 @@ ul {
 }
 
 .button-free {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
@@ -91,7 +118,13 @@ ul {
 }
 
 /* Hero section */
+.herro-section {
+  padding-top: 17px 0px;
+  padding-bottom: 126px 0px;
+}
+
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-brand);
   font-family: Play;
   font-size: 140px;
@@ -112,6 +145,7 @@ ul {
 /* Sections */
 
 .section-title {
+  margin-bottom: 48px;
   font-family: Play, sans-serif;
   font-size: 64px;
   font-weight: 700;
@@ -126,6 +160,10 @@ ul {
 }
 
 /* Section About */
+.about-title {
+  margin-bottom: 40px;
+}
+
 .about-text {
   font-size: 22px;
   line-height: 1.73;
